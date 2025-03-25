@@ -7,6 +7,10 @@ export default (config: UserConfig) => {
       alias: {
         '@': '/src',
       },
+      server: {
+        host: '0.0.0.0', // Binds to all network interfaces
+        port:  1337, // Use PORT environment variable or default to 3000
+      },
     },
   });
 };
